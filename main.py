@@ -231,6 +231,11 @@ while not adequacy:
     f4 = N - d
     print(Fore.BLUE + "\tКритерій Фішера")
     print(Style.RESET_ALL)
+
+    # Виконується перевірка після якоої виводиться, // стрічка 239
+    # `Рівняння регресії неадекватне стосовно оригіналу` // стрічка 241
+    # та програма переходить до рівняння взаємодії
+
     if not fisher_test(significant_coefficients):
         colorama.init()
         print(Fore.RED + "\t\tРівняння регресії неадекватне стосовно оригіналу \n")
